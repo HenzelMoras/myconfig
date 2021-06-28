@@ -1,3 +1,3 @@
 # myconfig
-configurations for my desktop [Debian]
-[] nvim-config uses lunarvim defaults 
+configurations for my desktop [Debian] 
+ - [x] nvim-config uses lunarvim defaults 
