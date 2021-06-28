@@ -1,2 +1,2 @@
 # myconfig
-configurations for my desktop
+configurations for my desktop [Debian]
