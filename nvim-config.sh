@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install build-essential
-sudo apt-get install gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip build-essential
+sudo apt-get install gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip build-essential checkinstall
 
 cd $(mktemp -d)
 git clone https://github.com/neovim/neovim --depth 1
