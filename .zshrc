@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/<user>/.oh-my-zsh"
+export ZSH="/home/oracle/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -110,10 +110,27 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export  VAGRANT_HOME=/home/<user>/.vagrant.d
 
+# vagrant executable
+export  VAGRANT_HOME=/home/oracle/.vagrant.d
+
+# java executable
 export JAVA_HOME=/usr/lib/jvm/jdk-16.0.1
-
 export PATH=$PATH:$JAVA_HOME/bin
 
+# nvim executable
+alias nvim="nvim.appimage"
+
+export NVIM=/home/oracle/Desktop/
+export PATH=$PATH:$NVIM
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# node executable
+export NODE=/home/oracle/.nvm/versions/node/v14.17.3/bin/node
+export PATH=$PATH:$NODE
+
+# tmux config file
+alias tmux='tmux -u'
 
